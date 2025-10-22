@@ -1,0 +1,3 @@
+## Ola! 👋
+
+Seja muito bem-vindo ao meu espaço digital! Aqui, eu, Carlos Rabelo, estou ansioso para compartilhar com você minhas experiências e conhecimentos sobre o fascinante mundo da tecnologia e sua relação com a educação. Prepare-se para explorar tópicos envolventes, descobrir soluções inovadoras e desvendar o potencial transformador que a tecnologia oferece. Estou aqui para desvendar os segredos por trás dos códigos, desafiar o status quo e inspirar você a abraçar o universo digital com entusiasmo e confiança. Juntos, embarcaremos em uma jornada emocionante. Seja bem-vindo ao meu mundo, onde a tecnologia e a educação se encontram!

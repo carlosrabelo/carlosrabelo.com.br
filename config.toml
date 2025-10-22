@@ -1,0 +1,40 @@
+languageCode = 'pt-pt'
+title = 'Carlos Rabelo'
+theme = 'maverick'
+
+baseURL = 'https://carlosrabelo.com.br/'
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  pages = "/:slug"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/sobre/"
+    weight = "-110"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = -200
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+ignoreErrors = ["error-remote-getjson"]
