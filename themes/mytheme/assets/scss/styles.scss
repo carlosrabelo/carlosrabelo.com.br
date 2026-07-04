@@ -1,0 +1,340 @@
+$font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$font-mono: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+
+// --- MAVERICK CORE COLORS & FONTS (RIGOROSO) ---
+:root {
+    --bg-color: hsla(93, 0%, 96%, 1.00); // A cor "gelo" original do Maverick
+    --text-color: #000;
+    --link-color: #000; // Links pretos como no original
+    --meta-color: #777; // Usado na classe .meta original
+    --code-bg: #eee;
+    --border-color: #000; // Maverick usa preto para divisoes fortes
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --link-color: #fff;
+        --meta-color: #999;
+        --code-bg: #333;
+        --border-color: #444;
+    }
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // Fonte EXATA do Maverick
+    font: 1rem/1.5 $font-stack;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem;
+}
+
+// --- MAVERICK TYPOGRAPHY RULES ---
+
+// Headers com mesmo tamanho do texto (Assinatura do Maverick)
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+b {
+    font-size: inherit;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+:focus-visible {
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    border-left: 5px solid #eee;
+    padding-left: 1rem;
+    margin: 0; // Maverick original margin 0
+}
+
+pre,
+code {
+    font-family: $font-mono;
+    font-size: small; // Maverick usa "small"
+    background: var(--code-bg);
+}
+
+pre {
+    padding: .5rem;
+    overflow: auto;
+}
+
+code {
+    margin: .1rem;
+    border: none;
+}
+
+ul {
+    list-style-type: square; // Maverick usa quadrados
+    padding-left: 1.2rem;
+}
+
+// --- INK-FREE LAYOUT STRUCTURE (ADAPTADO) ---
+
+.container {
+    max-width: 1000px; // Wider, more fluid layout
+    width: 90%; // Responsive percentage
+    margin: 0 auto;
+}
+
+// Header do Site
+.header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2; // Maverick header line-height
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--border-color); // Distinct separation
+
+    .site-title a {
+        font-weight: 700;
+        font-size: 1.5rem; // Slightly larger brand
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+// A Mágica: Layout Lateral do Ink com Estilo Maverick
+.post {
+    margin-bottom: 3rem;
+}
+
+.post-header {
+    display: flex;
+    // Sem margem inferior excessiva, Maverick é compacto
+}
+
+.post-header .meta {
+    flex: 0 0 80px; // Largura fixa para a coluna da data
+    margin-right: 1.5rem;
+    padding-top: 0.1rem; // Ajuste fino para alinhar texto base
+
+    .date {
+        color: var(--text-color); // Maverick original não esconde muito a data
+        font-variant-numeric: tabular-nums; // Maverick .time
+
+        .day {
+            display: block;
+            font-weight: 600;
+            font-size: inherit; // Mantendo regra de tamanho do Maverick
+        }
+
+        .rest {
+            display: block;
+            font-size: small;
+            color: var(--meta-color);
+        }
+    }
+}
+
+.post-header .matter {
+    flex: 1;
+
+    .title {
+        // Título parece texto normal em negrito
+        font-size: inherit;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .description {
+        color: var(--meta-color); // .meta do Maverick
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
+
+// Conteúdo Indentado
+.markdown {
+    max-width: 100%;
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.tags {
+    margin-top: 2rem;
+    font-size: small;
+
+    a {
+        margin-right: 1rem;
+        color: var(--meta-color);
+    }
+}
+
+.pagination {
+    margin-top: 2rem;
+    font-size: small;
+
+    a {
+        color: var(--meta-color);
+        margin: 0 0.5rem;
+    }
+
+    span {
+        color: var(--meta-color);
+    }
+}
+
+.post-nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+
+    a {
+        color: var(--meta-color);
+        max-width: 45%;
+    }
+}
+
+.post-meta {
+    font-size: small;
+    color: var(--meta-color);
+    margin-top: 1rem;
+
+    span {
+        margin-right: 1rem;
+    }
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.section-description {
+    margin-bottom: 2rem;
+    font-size: small;
+    color: var(--meta-color);
+}
+
+.markdown,
+.tags,
+.post-nav,
+.post-meta,
+.pagination {
+    margin-left: calc(80px + 1.5rem);
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    border-top: 2px solid var(--border-color);
+    font-size: small;
+    color: var(--meta-color);
+
+    p {
+        margin-bottom: 0.25rem;
+    }
+
+    a {
+        color: var(--meta-color);
+    }
+}
+
+// Mobile
+@media (max-width: 600px) {
+    .post-header {
+        display: block;
+    }
+
+    .post-header .meta {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+
+        div {
+            display: inline;
+        }
+
+        .day::after {
+            content: "/";
+            margin: 0 0.2rem;
+        }
+    }
+
+    .markdown,
+    .tags,
+    .post-nav,
+    .post-meta,
+    .pagination {
+        margin-left: 0;
+    }
+}
+
+// Estilo adaptativo para páginas sem data (ex: Sobre)
+.type-page {
+
+    .markdown,
+    .tags,
+    .post-nav,
+    .post-meta,
+    .pagination {
+        margin-left: 0;
+    }
+}
+
+// Melhoria de fluidez
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

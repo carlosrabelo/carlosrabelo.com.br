@@ -1,0 +1,17 @@
+<div class="header">
+  {{ if .IsHome }}<h1 class="site-title">{{ else }}<div class="site-title">{{ end }}
+    <a href="{{ "" | relLangURL }}">{{ .Site.Title }}</a>
+  {{ if .IsHome }}</h1>{{ else }}</div>{{ end }}
+  <div class="site-description">
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="flat">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" {{ if $currentPage.HasMenuCurrent "main" . }}class="active" aria-current="page" {{ end }}>{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</div>

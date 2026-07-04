@@ -1,0 +1,53 @@
+locale = 'pt-pt'
+title = 'Carlos Rabelo'
+theme = 'mytheme'
+
+baseURL = 'https://carlosrabelo.com.br/'
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  pages = "/:slug"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/sobre/"
+    weight = "-110"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = -200
+  [[menu.main]]
+    identifier = "codes"
+    name = "Code"
+    url = "/codes/"
+    weight = -150
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+[params]
+  author = "Carlos Rabelo"
+  description = "Tecnologia, programação, open source e inovação no serviço público por Carlos Rabelo."
+  logo = "/assets/favicon.ico"
+  copyright = "Carlos Rabelo"
+
+enableGitInfo = true
+
+ignoreErrors = ["error-remote-getjson"]

@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <!-- Required channel elements -->
+    <title>{{ .Site.Title }}</title>
+    <description>{{ .Site.Params.description }}</description>
+    <link>{{ .Site.BaseURL }}</link>
+    <!-- Optional channel elements -->
+    <language>{{ .Site.Language.Lang }}</language>
+    <copyright>Copyright {{ now.Format "2006"}}, {{ .Site.Params.author }}</copyright>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    <generator>Hugo - gohugo.io</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <atom:link href="{{ .Site.BaseURL }}/atom.xml" rel="self" type="application/atom+xml"/>
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <description>{{ .Summary | html }}</description>
+      <author>{{ .Site.Params.author }}</author>
+      <guid>{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      {{ with .Params.tags }}{{ range . }}<category>{{ . }}</category>{{ end }}{{ end }}
+    </item>
+    {{ end }}
+  </channel>
+</rss>

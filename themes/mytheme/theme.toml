@@ -1,0 +1,18 @@
+name = "MyTheme"
+license = "MIT"
+licenselink = ""
+description = "A custom minimal Hugo blog theme"
+
+# The home page of the theme, where the source can be found.
+homepage = "https://carlosrabelo.com.br/"
+
+# If you have a running demo of the theme.
+demosite = "https://carlosrabelo.com.br/"
+
+tags = ["blog", "minimal", "custom"]
+features = ["minimal", "fast", "responsive"]
+
+# If the theme has a single author
+[author]
+    name = "Carlos Rabelo"
+    homepage = "https://carlosrabelo.com.br/"

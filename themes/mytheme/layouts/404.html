@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  {{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+<main id="main">
+  <div class="container">
+    {{ partial "header.html" . }}
+    <p>A página que você procura não existe.</p>
+    <p><a href="{{ "" | relLangURL }}">Voltar para o início</a></p>
+    {{ partial "footer.html" . }}
+  </div>
+</main>
+</body>
+</html>
+
