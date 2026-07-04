@@ -4,10 +4,14 @@ description: "Meus projetos e experimentos de código."
 date: "2018-01-29T08:00:00"
 ---
 
-Aqui estão alguns dos projetos em que tenho trabalhado:
+Alguns dos projetos que desenvolvi ao longo dos anos:
 
-### [Projeto Exemplo](https://github.com/exemplo)
-Uma breve descrição do que este projeto faz e as tecnologias utilizadas.
+### [gobi](https://github.com/carlosrabelo/gobi)
+Clone funcional do dBase II escrito em Go. REPL com prompt de ponto, motor de expressões, arquivos `.dbf`, índices B-Tree, TUI VT100, scripts `.prg` e comandos como `JOIN`, `UPDATE`, `BROWSE`, `SORT`.
 
-### [Outro Projeto](https://github.com/outro)
-Mais um experimento interessante de código.
+### [bip38cli](https://github.com/carlosrabelo/bip38cli)
+Ferramenta CLI para criptografar e descriptografar chaves privadas Bitcoin usando o padrão BIP38. Implementa scrypt, AES, curvas elípticas e formatos WIF.
+
+---
+
+Mais projetos no meu [GitHub](https://github.com/carlosrabelo).
