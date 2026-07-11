@@ -1,7 +1,7 @@
 name = "MyTheme"
 license = "MIT"
-licenselink = ""
-description = "A custom minimal Hugo blog theme"
+licenselink = "https://github.com/carlosrabelo/carlosrabelo.com.br/blob/master/themes/mytheme/LICENSE"
+description = "A custom minimal Hugo blog theme (Maverick/Ink inspired)"
 
 # The home page of the theme, where the source can be found.
 homepage = "https://carlosrabelo.com.br/"
@@ -16,3 +16,7 @@ features = ["minimal", "fast", "responsive"]
 [author]
     name = "Carlos Rabelo"
     homepage = "https://carlosrabelo.com.br/"
+
+[original]
+    name = "Calvin Tran"
+    homepage = "https://github.com/knadh"

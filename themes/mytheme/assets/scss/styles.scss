@@ -77,9 +77,29 @@ img {
 }
 
 blockquote {
-    border-left: 5px solid #eee;
+    border-left: 5px solid var(--code-bg);
     padding-left: 1rem;
     margin: 0; // Maverick original margin 0
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+
+    &:focus {
+        left: 1rem;
+        top: 1rem;
+    }
+}
+
+.nav a.active {
+    text-decoration: underline;
 }
 
 pre,

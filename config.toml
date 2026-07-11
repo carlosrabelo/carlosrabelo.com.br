@@ -1,37 +1,35 @@
-locale = 'pt-pt'
-title = 'Carlos Rabelo'
-theme = 'mytheme'
+defaultContentLanguage = "pt-br"
+locale = "pt-BR"
+title = "Carlos Rabelo"
+theme = "mytheme"
 
-baseURL = 'https://carlosrabelo.com.br/'
+baseURL = "https://carlosrabelo.com.br/"
 
 [pagination]
   pagerSize = 10
 
-[permalinks]
-  pages = "/:slug"
-
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "Sobre"
-    url = "/sobre/"
-    weight = "-110"
+    name = "About"
+    pageRef = "/about"
+    weight = -110
   [[menu.main]]
     identifier = "posts"
-    name = "Blog"
-    url = "/posts/"
+    name = "Posts"
+    pageRef = "/posts"
     weight = -200
   [[menu.main]]
     identifier = "codes"
-    name = "Code"
-    url = "/codes/"
+    name = "Codes"
+    pageRef = "/codes"
     weight = -150
 
 [taxonomies]
   tag = "tags"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "SITEMAP"]
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML"]
 
 [sitemap]
@@ -50,9 +48,12 @@ baseURL = 'https://carlosrabelo.com.br/'
 [params]
   author = "Carlos Rabelo"
   description = "Tecnologia, programação, open source e inovação no serviço público por Carlos Rabelo."
-  logo = "/assets/favicon.ico"
+  logo = "/assets/og-default.png"
+  images = ["/assets/og-default.png"]
   copyright = "Carlos Rabelo"
+  # Uncomment githubRepo after installing the Utterances app on the repository.
+  [params.comments]
+    # githubRepo = "carlosrabelo/carlosrabelo.com.br"
+    theme = "preferred-color-scheme"
 
 enableGitInfo = true
-
-ignoreErrors = ["error-remote-getjson"]

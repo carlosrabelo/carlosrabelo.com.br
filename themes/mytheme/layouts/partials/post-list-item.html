@@ -1,0 +1,19 @@
+<div class="post">
+  <div class="post-header">
+    <div class="meta">
+      <div class="date">
+        <span class="day">{{ .Date.Format "02" }}</span>
+        <span class="rest">{{ partial "date-month-year.html" .Date }}</span>
+      </div>
+    </div>
+    <div class="matter">
+      <h4 class="title small">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ if .Draft }}<span class="draft-label">RASCUNHO</span>{{ end }}
+      </h4>
+      <span class="description">
+        {{ with .Description }}{{ . }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}
+      </span>
+    </div>
+  </div>
+</div>

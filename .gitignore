@@ -1,20 +1,52 @@
-# Created by https://www.toptal.com/developers/gitignore/api/hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
+# ============================================================================
+# SECRETS
+# ============================================================================
 
-### Hugo ###
-# Generated files by hugo
+# Directories
+# (none - secrets are typically files)
+
+# Files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+
+# ============================================================================
+# HUGO
+# ============================================================================
+
+# Directories
 /public/
 /resources/_gen/
+.nexor/
+
+# Files
 /assets/jsconfig.json
 hugo_stats.json
-
-# Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
-
-# Temporary lock file while building
 /.hugo_build.lock
 
-# End of https://www.toptal.com/developers/gitignore/api/hugo
-.nexor/
+# ============================================================================
+# EDITORS
+# ============================================================================
+
+# Directories
+.vscode/
+.idea/
+
+# Files
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# OS
+# ============================================================================
+
+# Files
+.DS_Store
+Thumbs.db

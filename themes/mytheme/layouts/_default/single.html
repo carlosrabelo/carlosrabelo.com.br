@@ -1,53 +1,36 @@
-<!doctype html>
-<html lang="{{ .Site.Language.Lang }}">
-{{ partial "head.html" . }}
-
-<body>
-  <div class="container">
-    {{ partial "header.html" . }}
-    <div class="post {{ if eq .Section " posts" }}type-post{{ else }}type-page{{ end }}">
-      <div class="post-header">
-        {{ if eq .Section "posts" }}
-        <div class="meta">
-          <div class="date">
-            <span class="day">{{ .Date.Format "02" }}</span>
-            <span class="rest">{{ .Date.Format "Jan 2006" }}</span>
-          </div>
-        </div>
-        {{ end }}
-        <div class="matter">
-          <h1 class="title">{{ .Title }}</h1>
-        </div>
+{{ define "main" }}
+<div class="post {{ if eq .Section "posts" }}type-post{{ else }}type-page{{ end }}">
+  <div class="post-header">
+    {{ if eq .Section "posts" }}
+    <div class="meta">
+      <div class="date">
+        <span class="day">{{ .Date.Format "02" }}</span>
+        <span class="rest">{{ partial "date-month-year.html" .Date }}</span>
       </div>
-
-      <div class="markdown">
-        {{ .Content }}
-      </div>
-
-      {{ if eq .Section "posts" }}
-      <div class="post-meta">
-        {{ if .ReadingTime }}<span class="reading-time">{{ .ReadingTime }} min de leitura</span>{{ end }}
-        {{ if .Lastmod }}<span class="lastmod">Atualizado em {{ .Lastmod.Format "02 Jan 2006" }}</span>{{ end }}
-      </div>
-      {{ with .Params.tags }}
-      <div class="tags">
-        {{ range . }}
-        {{ $href := print ("tags/" | relLangURL) (urlize .) }}
-        <a href="{{ $href }}" class="tag-li">#{{ . }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
-      <nav class="post-nav">
-        {{ with .PrevInSection }}<a class="prev" href="{{ .Permalink }}">&laquo; {{ .Title }}</a>{{ end }}
-        {{ with .NextInSection }}<a class="next" href="{{ .Permalink }}">{{ .Title }} &raquo;</a>{{ end }}
-      </nav>
-      <div id="comments">
-        {{ partial "comments.html" $ }}
-      </div>
-      {{ end }}
     </div>
-    {{ partial "footer.html" . }}
+    {{ end }}
+    <div class="matter">
+      <h1 class="title">{{ .Title }}</h1>
+    </div>
   </div>
-</body>
 
-</html>
+  <div class="markdown">
+    {{ .Content }}
+  </div>
+
+  {{ if eq .Section "posts" }}
+  <div class="post-meta">
+    {{ if .ReadingTime }}<span class="reading-time">{{ .ReadingTime }} min de leitura</span>{{ end }}
+    {{ if .Lastmod }}<span class="lastmod">Atualizado em {{ partial "date-full.html" .Lastmod }}</span>{{ end }}
+  </div>
+  {{ partial "tags.html" . }}
+  <nav class="post-nav">
+    {{ with .PrevInSection }}<a class="prev" href="{{ .Permalink }}">&laquo; {{ .Title }}</a>{{ end }}
+    {{ with .NextInSection }}<a class="next" href="{{ .Permalink }}">{{ .Title }} &raquo;</a>{{ end }}
+  </nav>
+  <div id="comments">
+    {{ partial "comments.html" . }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

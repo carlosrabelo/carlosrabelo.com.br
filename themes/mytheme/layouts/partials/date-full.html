@@ -1,0 +1,4 @@
+{{- /* Portuguese day + short month + year, e.g. "02 jan 2006" */ -}}
+{{- $months := slice "jan" "fev" "mar" "abr" "mai" "jun" "jul" "ago" "set" "out" "nov" "dez" -}}
+{{- $month := index $months (sub .Month 1) -}}
+{{- printf "%02d %s %d" .Day $month .Year -}}
