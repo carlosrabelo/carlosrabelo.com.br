@@ -14,7 +14,7 @@ Enquanto eu escrevia o código em Go, veio à mente a lembrança de um artigo an
 
 ### 1985, 15 anos
 
-Micro Sistemas 041, fevereiro de 1985. Eu tinha 15 anos e devorava cada edição da revista. Artigos sobre CP/M, TRS-80, interfaces, linguagens — tudo que um garoto curioso podia querer estava ali.
+[Micro Sistemas 041](https://datassette.org/pt-br/revistas/informatica/br-brasil/micro-sistemas/micro-sistemas-no-041), fevereiro de 1985. Eu tinha 15 anos e devorava cada edição da revista. Artigos sobre CP/M, TRS-80, interfaces, linguagens — tudo que um garoto curioso podia querer estava ali.
 
 Naquele número, Ivan Camilo da Cruz publicou a primeira parte de "Um gerente prático em banco de dados". Era um sistema de banco de dados escrito em BASIC para a linha TRS-80, com um recurso que me fascinou na hora: indexação por árvores binárias.
 
@@ -24,11 +24,11 @@ O artigo dizia:
 
 Eu li essa frase dezenas de vezes. Passei horas com papel quadriculado simulando a inserção de nós, desenhando os galhos, entendendo como um nó pai apontava para dois filhos, como a busca descia pela árvore até encontrar o registro certo. Não era só algoritmo — era a primeira vez que eu entendia como um computador podia encontrar dados sem ler tudo do começo ao fim.
 
-O programa era o MSLBD — Mini Sistema de Gerenciamento de Bancos de Dados. As variáveis em BASIC estavam impressas na revista: `E1` era o elo com o galho direito, `E2` o elo com o galho esquerdo, `E3` o elo com o nó pai. E1$, E2$, E3$ — as versões em string porque o BASIC do TRS-80 armazenava ponteiros como números em ponto flutuante e era mais seguro guardá-los como strings.
+O programa era o MSGBD — Mini Sistema de Gerenciamento de Bancos de Dados. As variáveis em BASIC estavam impressas na revista: `E1` era o elo com o galho direito, `E2` o elo com o galho esquerdo, `E3` o elo com o nó pai. E1$, E2$, E3$ — as versões em string porque o BASIC do TRS-80 armazenava ponteiros como números em ponto flutuante e era mais seguro guardá-los como strings.
 
 Na época, eu digitei o programa inteiro da revista no CP-500 da escola. Linha por linha. E rodei. Funcionava.
 
-Depois vieram as partes 2 e 3 — Micro Sistemas 043 e 047 — com as rotinas portáveis e os geradores de etiqueta e mail merge. Cada artigo aprofundava um pouco mais o funcionamento interno. A tabela de descrição de campos, o mecanismo de busca binária, a estrutura dos arquivos de índice.
+Depois vieram as partes 2 e 3 — [Micro Sistemas 043](https://datassette.org/pt-br/revistas/informatica/br-brasil/micro-sistemas/micro-sistemas-no-043) e [047](https://datassette.org/pt-br/revistas/informatica/br-brasil/micro-sistemas/micro-sistemas-no-047) — com as rotinas portáveis e os geradores de etiqueta e mail merge. Cada artigo aprofundava um pouco mais o funcionamento interno. A tabela de descrição de campos, o mecanismo de busca binária, a estrutura dos arquivos de índice.
 
 Foi ali que aprendi banco de dados. Não na faculdade, não num livro teórico — num artigo de revista, numa linguagem que eu mal dominava, digitando linha por linha num micro emprestado.
 
