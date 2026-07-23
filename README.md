@@ -1,6 +1,6 @@
 # carlosrabelo.com.br
 
-Personal site and blog of Carlos Rabelo — technology, programming, open source, and public-sector IT.
+Portuguese personal site and blog of Carlos Rabelo — technology, programming, open source, and public-sector IT.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Hugo](https://img.shields.io/badge/Hugo-0.164.0-blue.svg)](https://gohugo.io/)
@@ -47,10 +47,6 @@ Output lands in `public/`.
 1. Install the [Utterances](https://utteranc.es/) GitHub App on this repository.
 2. In `config.toml`, uncomment `params.comments.githubRepo`.
 
-### Optional: security headers
-
-GitHub Pages does not support custom headers. If you front the site with Cloudflare, see [docs/security-headers.md](docs/security-headers.md).
-
 ## Project Layout
 
 ```
@@ -58,7 +54,6 @@ content/           Site content (posts, codes, about)
 themes/mytheme/    Custom Hugo theme (layouts, SCSS, static assets)
 static/            Site-wide static files (CNAME)
 archetypes/        Content archetypes
-docs/              Extra documentation
 .github/workflows/ GitHub Pages deploy
 ```
 
@@ -70,7 +65,9 @@ docs/              Extra documentation
 
 Deploy runs on push to `master`.
 
-Content markdown filenames stay in English even when the body is in Portuguese.
+Content markdown filenames stay in English.
+
+English version: [carlosrabelo.com](https://carlosrabelo.com/).
 
 ## License
 
