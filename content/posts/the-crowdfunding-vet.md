@@ -1,9 +1,9 @@
 ---
 author: "Carlos Rabelo"
-title: "A vaquinha"
+title: "A Vaquinha e o Panetone"
 date: "2026-07-22T10:00:00"
 description: "Uma vaquinha no Instagram me fez lembrar por que gosto deste trabalho."
-tags: ["educacao", "ifmt", "historia"]
+tags: ["educacao", "ifmt", "historia", "vaquinha", "panetone"]
 ---
 
 Uma vaquinha no Instagram. Cirurgia do "Panetone". Pix na descrição, fotos do cachorro, a urgência de quem não larga enquanto não resolve.
@@ -32,4 +32,4 @@ Foi aí que caiu a ficha. O IFMT não é só prédio, processo, concurso. É iss
 
 Ninguém fala disso no edital. Mas é a melhor parte do trabalho.
 
-Ver essas meninas e meninos crescerem. E, se der sorte, ver virarem adultos que você respeita e admira.
+Ver essas meninas e meninos crescerem. E principalmente ver virarem adultos que você respeita e admira.
