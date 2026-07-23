@@ -6,7 +6,7 @@ aliases:
   - /sobre/
 ---
 
-Meu nome é Carlos Rabelo e este domínio está no ar desde 1998. Já foi muitas coisas — site pessoal, blog, portfólio — e hoje é um espaço onde compartilho o que aprendo e construo com tecnologia.
+Meu nome é Carlos Rabelo e este domínio está no ar desde 1998. Já foi de tudo — site pessoal, blog, portfólio, arquivo. Em 29 de junho de 2026, abandonei o WordPress, tirei tudo do ar e migrei para Hugo. Hoje é um espaço mais deliberado: compartilho o que aprendo e construo com tecnologia, crio coisas novas e só recoloco o antigo depois de reler e ver se ainda encaixa nesta missão.
 
 ### Minha Jornada
 
@@ -20,9 +20,9 @@ Em 2018, dei um novo passo: ingressei como servidor público federal em uma esco
 
 ### Posts
 
-Este espaço existe desde os tempos dos blogs como diários pessoais. Ressurgiu em 2018 como uma nova fase, com um propósito mais claro: compartilhar experiências de quem vive a tecnologia no dia a dia — dentro e fora do serviço público.
+Este espaço existe desde os tempos dos blogs como diários pessoais. Ressurgiu em 2018 e, em 2026, recomeçou de novo: saí do WordPress, limpei o acervo e passei a publicar com Hugo. A história dessa virada está em [Tirei tudo do ar](/posts/leaving-wordpress-for-hugo/).
 
-Vou escrever sobre programação, infraestrutura, segurança, IoT, open source, tecnologias educacionais e tudo mais que surgir pelo caminho. Sem promessas de fórmulas mágicas, mas com histórias reais e conhecimento acumulado ao longo de décadas.
+O propósito segue claro: compartilhar experiências de quem vive a tecnologia no dia a dia — dentro e fora do serviço público. Escrevo sobre programação, infraestrutura, segurança, IoT, open source, tecnologias educacionais e o que surgir pelo caminho. Sem fórmulas mágicas; com histórias reais e o filtro de só manter o que ainda faz sentido.
 
 ### Codes
 
