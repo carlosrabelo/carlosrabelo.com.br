@@ -56,4 +56,11 @@ baseURL = "https://carlosrabelo.com.br/"
     # githubRepo = "carlosrabelo/carlosrabelo.com.br"
     theme = "preferred-color-scheme"
 
+[services.googleAnalytics]
+  id = "G-N3LMSLTCQR"
+
+[privacy.googleAnalytics]
+  disable = false
+  respectDoNotTrack = true
+
 enableGitInfo = true
